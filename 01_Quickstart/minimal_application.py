@@ -7,6 +7,7 @@ from flask import Flask
 # 这是必需的，以便 Flask 知道在哪里寻找资源，例如模板和静态文件。
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello_world():
     # 函数返回在浏览器中显示的消息。默认内容是HTML
@@ -14,3 +15,5 @@ def hello_world():
 
 # 运行程序
 # flask --app minimal_application run
+# 允许所有地址访问
+# flask --app  minimal_application.py run --host=0.0.0.0
