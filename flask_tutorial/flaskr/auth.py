@@ -84,7 +84,8 @@ def logout():
     session.clear()
     return redirect(url_for('index'))
 
-
+# 定义了一个装饰器，通过这个装饰器，来判断是否需要登录
+# 装饰器的作用主要是包装原始函数，可能改变函数的行为或者添加额外的功能
 def login_required(view):
     # 装饰器返回一个新的视图函数，它包装了它所应用的原始视图。
     @functools.wraps(view)
