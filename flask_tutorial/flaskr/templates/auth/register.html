@@ -1,5 +1,7 @@
+<!--告诉Jinja它继承了base.html-->
 {% extends 'base.html' %}
 
+<!--将替换到父模板对应的block-->
 {% block header %}
   <h1>{% block title %}Register{% endblock %}</h1>
 {% endblock %}

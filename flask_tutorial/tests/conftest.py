@@ -14,6 +14,7 @@ def app():
 
     app = create_app({
         'TESTING': True,
+        # 覆盖DATABASEkey值，以便使用测试数据库
         'DATABASE': db_path,
     })
 

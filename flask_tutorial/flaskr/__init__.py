@@ -39,6 +39,7 @@ def create_app(test_config=None):
 
     from . import blog
     app.register_blueprint(blog.bp)
+    # 添加url规则，使得url_for查找index的时候，找到/
     app.add_url_rule('/', endpoint='index')
 
 

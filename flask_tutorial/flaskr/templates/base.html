@@ -1,6 +1,9 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
+<!--flask会自动添加一个static视图，这个视图采用相对于Flaskr/static目录的路径，可以使用url_for来引用它-->
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!--在Jinja中，花括号之间的内容是将输出到最终文档的表达式。-->
+<!--花括号加百分号 表示控制流语句，如 if 和 for。-->
 <nav>
   <h1>Flaskr</h1>
   <ul>
